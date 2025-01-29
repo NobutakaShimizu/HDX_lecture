@@ -36,10 +36,12 @@ parent: ランダムウォーク概論
 
 隣接行列$A$に対し、$A^\ell$の各成分は長さ$\ell$の路の個数に等しい。
 
+<div id="lem:adjacency walk count" markdown="1">
 {: .lemma-title }
 > **補題1.3.2**
 >
 > グラフ$G=(V,E)$の隣接行列$A$と$\ell\in\Nat$を考える。任意の$u,v\in V$に対し、$A^\ell(u,v)$は頂点$u$から$v$への長さ$\ell$の路の個数に等しい。
+</div>
 
 <details markdown="1" style="background-color: #eee;">
 <summary style="display: list-item">証明</summary>

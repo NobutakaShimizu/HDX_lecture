@@ -4,7 +4,7 @@ nav_order: 6
 parent: ランダムウォーク概論
 ---
 
-# レイリー商 {#sec:Rayleigh quotient}
+# レイリー商
 
 以下の結果は第二固有値の上界を得るときなどに役にたつ.
 
