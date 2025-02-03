@@ -12,4 +12,10 @@ nav_order: 4
 本チャプターではまず単体複体とその上でのランダムウォークを定義し,
 これに基づいて高次元エクスパンダーの定義と重要な性質を紹介する.
 
-本講義資料は第一線で活躍している海外の研究者らの講義資料も参考にした \cite{LapChiLau_Lecture,Gharan_Lecture,MaxHopkins_Lecture}.
+応用なども含めた網羅的なサーベイ論文はまだ私は把握していないが, 本講義資料を作成するにあたり,
+この分野の第一線で活躍している海外の研究者らの講義資料を大いに参考にした[^LClec][^Glec][^HLlec].
+
+[^LClec]: Lap Chi Lau. CS 860: Eigenvalues and Polynomials (Lecture Note). 2022. [URL](https://cs.uwaterloo.ca/~lapchi/cs860-2022/notes.html)
+[^Glec]: S. O. Gharan. CSE 599: Polynomial Paradigm in Algorithm Design. 2019. [URL](https://homes.cs.washington.edu/~shayan/courses/polynomials/)
+[^HLlec]: M. Hopkins and S. Lovett. SE 291 - Expander graphs and High-Dimensional Expanders, 2021. [URL](https://cseweb.ucsd.edu/classes/sp21/cse291-g/)
+

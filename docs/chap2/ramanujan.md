@@ -220,23 +220,15 @@ $k=\floor*{\frac{\diam(G)-1}{2}}$を代入すれば(\ref{eq:weak alon boppana bo
 >
 > $d$-正則グラフ$G=(V,E)$は, 単純ランダムウォークの遷移確率行列$P$の第二固有値$\lambda_2$が$\lambda_2 \le 2\sqrt{d-1}$を満たすとき, **ラマヌジャングラフ (Ramanujan graph)**という.
 
-[定理2.3.2](#thm:Alon Boppana)を達成するグラフ列, すなわち, 次数$d$を固定したときに頂点数が増大していくグラフ列$(G_n)_{n\in\Nat}$であって各$G_n$が$d$-正則ラマヌジャングラフとなるものは存在するだろうか? この漸近的に最適な正則エクスパンダーグラフの構成は\citet{LPS88,Mar88}によって独立同時期に初めてその構成が与えられた. 彼らは$d-1$が$4$で割った余りが$1$となる素数であるときに$d$-正則ラマヌジャングラフの列を構成した. なお, 「ラマヌジャングラフ」という名称は\cite{LPS88}の証明がラマヌジャン予想と呼ばれる予想に依拠しているからである（「予想」と書いたが当時は既に解決している）. その後, \citet{Mor94}によって次数が素数べき$+1$の形であってもラマヌジャングラフが構成できることが示された.
+[定理2.3.2](#thm:Alon Boppana)を達成するグラフ列, すなわち, 次数$d$を固定したときに頂点数が増大していくグラフ列$(G_n)_{n\in\Nat}$であって各$G_n$が$d$-正則ラマヌジャングラフとなるものは存在するだろうか? この漸近的に最適な正則エクスパンダーグラフの構成はLubotzkyら[^LPS88]とMargulis[^Mar88]によって独立同時期に初めてその構成が与えられた. 彼らは$d-1$が$4$で割った余りが$1$となる素数であるときに$d$-正則ラマヌジャングラフの列を構成した. なお, 「ラマヌジャングラフ」という名称はLubotzkyらの証明がラマヌジャン予想と呼ばれる予想に依拠しているからである（「予想」と書いたが当時は既に解決している）. その後, Morgenstern[^Mor94]によって次数が素数べき$+1$の形であってもラマヌジャングラフが構成できることが示された.
+
+[^LPS88]: A. Lubotzky, R. Phillips, and P. Sarnak. “Ramanujan graphs”. Combinatorica 8.3 (1988), pp. 261–277.
+
+[^Mar88]: G. A. Margulis. “Explicit group-theoretic constructions of combinatorial schemes and their applications in the construction of expanders and concentrators”. Problems Inform. Transmission (1988).
+
+[^Mor94]: M. Morgenstern. “Existence and Explicit Constructions of q + 1 Regular Ramanujan Graphs for Every Prime Power q”. In: Journal of Combinatorial Theory Series B 62.1 (1994), pp. 44–62.
 
 {: .theorem-title }
 > **定理2.3.6 (ラマヌジャングラフの陽な構成)**
 >
 > 任意の素数$q$と任意の$k\in\Nat$に対して, 頂点数が発散するある$(q^k+1)$-正則ラマヌジャングラフの列が存在し, 陽に構成できる.
-
-漸近的に[定理2.3.2](#thm:Alon Boppana)を達成するグラフを**ラマヌジャングラフ (Ramanujan graph)**という。
-
-{: .definition-title }
-> **定義2.3.5 (ラマヌジャングラフ)**
->
-> $d$-正則グラフ$G=(V,E)$は、単純ランダムウォークの遷移確率行列$P$の第二固有値$\lambda_2$が$\lambda_2 \le 2\sqrt{d-1}$を満たすとき、**ラマヌジャングラフ (Ramanujan graph)**という。
-
-[定理2.3.2](#thm:Alon Boppana)を達成するグラフ列、すなわち、次数$d$を固定したときに頂点数が増大していくグラフ列$(G_n)_{n\in\Nat}$であって各$G_n$が$d$-正則ラマヌジャングラフとなるものは存在するだろうか？この漸近的に最適な正則エクスパンダーグラフの構成は\citet{LPS88,Mar88}によって独立同時期に初めてその構成が与えられた。彼らは$d-1$が$4$で割った余りが$1$となる素数であるときに$d$-正則ラマヌジャングラフの列を構成した。なお、「ラマヌジャングラフ」という名称は\cite{LPS88}の証明がラマヌジャン予想と呼ばれる予想に依拠しているからである（「予想」と書いたが当時は既に解決している）。その後、\citet{Mor94}によって次数が素数べき$+1$の形であってもラマヌジャングラフが構成できることが示された。
-
-{: .theorem-title }
-> **定理2.3.6 (ラマヌジャングラフの陽な構成)**
->
-> 任意の素数$q$と任意の$k\in\Nat$に対して、頂点数が発散するある$(q^k+1)$-正則ラマヌジャングラフの列が存在し、陽に構成できる。

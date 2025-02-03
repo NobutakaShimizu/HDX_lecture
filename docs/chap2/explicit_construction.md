@@ -12,7 +12,9 @@ parent: エクスパンダーグラフ
 
 ## ランダム正則グラフ
 
-$n$頂点$d$-正則グラフ全体の集合を$\calG_{n,d}$とし、$\calG_{n,d}$から一様ランダムに選ばれたグラフ$G\sim\calG_{n,d}$を考える（$nd$は常に偶数とする）。この確率変数をランダム正則グラフという。ランダム正則グラフは「最適な」エクスパンダーグラフであることが知られている\cite{Friedman_random_regular}。
+$n$頂点$d$-正則グラフ全体の集合を$\calG_{n,d}$とし、$\calG_{n,d}$から一様ランダムに選ばれたグラフ$G\sim\calG_{n,d}$を考える（$nd$は常に偶数とする）。この確率変数をランダム正則グラフという。ランダム正則グラフは「最適な」エクスパンダーグラフであることがFriedmanによって示されている[^Fre08].
+
+[^Fre08]: J. Friedman. “A Proof of Alon’s Second Eigenvalue Conjecture and Related Problems”. Memoirs of the American Mathematical Society 195 (2008).
 
 {: .theorem-title }
 > **定理2.2.1 (Friedmanの定理)**
@@ -27,9 +29,12 @@ $n$頂点$d$-正則グラフ全体の集合を$\calG_{n,d}$とし、$\calG_{n,d}
 ## Margulisの構成
 
 先の節ではランダムな正則グラフがエクスパンダーになることを見てきたが, 陽に構成できるエクスパンダーグラフも存在する.
-定数$\lambda<1$に対し$\lambda$-エクスパンダーの族は\citet{Margulis1973}によって初めて与えられ,
-そのスペクトルギャップの陽な値は\citet{GG81}により初めて与えられた.
-より詳細な背景や定理の証明は\cite{HLW06}を参照されたい.
+定数$\lambda<1$に対し$\lambda$-エクスパンダーの族はMargulis(1973)によって初めて与えられ[^Mar73],
+そのスペクトルギャップの陽な値はGabberとGalilにより初めて与えられた[^GG81].
+
+[^Mar73]: G. A. Margulis. “Explicit group-theoretic constructions of combinatorial schemes and their applications in the construction of expanders and concentrators”. In: Problems Inform. Transmission (1988)
+
+[^GG81]: O. Gabber and Z. Galil. “Explicit constructions of linear-sized superconcentrators”. In: J. Comput. System Sci. 22.3 (June 1981), pp. 407–420.
 
 <div id="thm:Margulis_construction" markdown="1">
 {: .theorem-title }
@@ -71,7 +76,9 @@ $n$頂点$d$-正則グラフ全体の集合を$\calG_{n,d}$とし、$\calG_{n,d}
 </div>
 
 ## ケイリーグラフ
-エクスパンダーグラフを陽に構成する最も重要なアプローチの一つとしてケイリーグラフ\cite{Cayley1878}と呼ばれる概念が知られている。
+エクスパンダーグラフを陽に構成する最も重要なアプローチの一つとしてケイリーグラフ[^Cay78]と呼ばれる概念が知られている。
+
+[^Cay78]: Cayley. “Desiderata and Suggestions: No. 2. The Theory of Groups: Graphical Representation”. In: Amer. J. Math. 1.2 (1878), pp. 174–176.
 
 <div id="def:Cayley_graph" markdown="1">
 {: .definition-title }

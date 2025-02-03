@@ -22,8 +22,6 @@ parent: ランダムウォーク概論
 > $$
 </div>
 
-<div id="proof:Rayleigh_quotient" markdown="1">
-{: .proof-title }
 <details markdown="1" style="background-color: #eee;">
 <summary style="display: list-item">証明</summary>
 
