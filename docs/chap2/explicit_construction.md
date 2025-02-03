@@ -31,6 +31,7 @@ $n$頂点$d$-正則グラフ全体の集合を$\calG_{n,d}$とし、$\calG_{n,d}
 そのスペクトルギャップの陽な値は\citet{GG81}により初めて与えられた.
 より詳細な背景や定理の証明は\cite{HLW06}を参照されたい.
 
+<div id="thm:Margulis_construction" markdown="1">
 {: .theorem-title }
 > **定理2.2.2(Margulisの構成)**
 >
@@ -67,11 +68,12 @@ $n$頂点$d$-正則グラフ全体の集合を$\calG_{n,d}$とし、$\calG_{n,d}
 > 
 > およびこれらの逆変換で与えられる八つの頂点と接続させて得られるグラフを$G_m$とする (多重辺や自己ループも含みうる).
 > このとき, 任意の$m\in\Nat$に対して$\lambda(G_m) \le \frac{5\sqrt{2}}{8} < 0.9$.
+</div>
 
 ## ケイリーグラフ
 エクスパンダーグラフを陽に構成する最も重要なアプローチの一つとしてケイリーグラフ\cite{Cayley1878}と呼ばれる概念が知られている。
 
-<div id="def:Cayley graph" markdown="1">
+<div id="def:Cayley_graph" markdown="1">
 {: .definition-title }
 > **定義2.2.3 (ケイリーグラフ)**
 >

@@ -1,5 +1,5 @@
 ---
-title: エクスパンダーグラフの定義
+title: 定義
 nav_order: 1
 parent: エクスパンダーグラフ
 ---

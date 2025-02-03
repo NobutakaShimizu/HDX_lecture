@@ -7,7 +7,7 @@ parent: ランダムウォーク概論
 
 非自明な固有値が絶対値の意味で小さいときに混交時間が上から抑えられることを示す. 
 
-<div id="def:second eigenvalue" markdown="1">
+<div id="def:second_eigenvalue" markdown="1">
 {: .definition-title }
 > **定義1.6.1**
 >
@@ -44,7 +44,8 @@ parent: ランダムウォーク概論
 証明は演習問題とする. 
 この補題の重要な系としてエクスパンダー混交補題と呼ばれる重要な結果を得る. 
 
-<div id="cor:general expander mixing lemma" markdown="1">
+<div id="cor:general_expander_mixing_lemma" markdown="1">
+
 {: .corollary-title }
 > **系1.6.3**
 >
@@ -54,9 +55,10 @@ parent: ランダムウォーク概論
 > $$
 > \abs{\piprod{f,Pg} - \Epi f \cdot \Epi g} \le \lambda(P)\cdot \sqrt{\Varpi f \cdot \Varpi g}. 
 > $$
+
 </div>
 
-<div id="lemma:mixing time and spectral gap" markdown="1">
+<div id="lemma:mixing_time_and_spectral_gap" markdown="1">
 {: .lemma-title }
 > **補題1.6.4**
 >

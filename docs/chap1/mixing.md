@@ -90,7 +90,7 @@ $$
 
 以下にランダムウォークの収束性を証明する.
 
-<div id="thm:random walk convergence" markdown="1">
+<div id="thm:random_walk_convergence" markdown="1">
 {: .theorem-title }
 > **定理1.2.6(ランダムウォークの収束性)**
 >
@@ -100,9 +100,9 @@ $$
 > - ランダムウォークが既約的かつ非周期的ならば, 定常分布$\pi$が一意に存在して$\dtv(p_t,\pi)\to 0$ ($t\to\infty$)が成り立つ.
 </div>
 
-[定理1.2.6](#thm:random walk convergence)は一つ目の主張は定常分布の定義を使えば簡単に示せるが二つ目の主張の証明は難しい. そのためにまず, 以下の三つの補題を証明する.
+[定理1.2.6](#thm:random_walk_convergence)は一つ目の主張は定常分布の定義を使えば簡単に示せるが二つ目の主張の証明は難しい. そのためにまず, 以下の三つの補題を証明する.
 
-<div id="lem:Schur lemma" markdown="1">
+<div id="lem:Schur_lemma" markdown="1">
 {: .lemma-title }
 > **補題1.2.7: Shurの補題**
 >
@@ -129,7 +129,7 @@ $$
 
 </details>
 
-<div id="lem:P bekijou" markdown="1">
+<div id="lem:P_bekijou" markdown="1">
 {: .lemma-title }
 > **補題1.2.8**
 >
@@ -140,11 +140,11 @@ $$
 <summary style="display: list-item">証明</summary>
   遷移確率行列 $P$ に対し有向グラフ $\vG=(V,\vec{E})$ を, $P(u,v)>0$ のときかつその時に限り有向辺 $(u,v)$ を追加して得られる有向グラフとする.$P^L(u,v)$ は, $u$ から開始したランダムウォークがちょうど $L$ 回の遷移の後に $v$ にいる確率である.この値が正であるということは, $\vG$ 上で $u$ から $v$ への長さちょうど $L$ の有向路が存在することを意味する.
 
-  頂点 $w\in V$ を任意に固定し, $S\subseteq \Nat$ を $S = \set{i\ge 0\colon P^i(w,w)>0}$ とする.非周期性より $\gcd(S)=1$ である.この集合 $S$ に対し[補題1.2.7](#lem:Schur lemma)により存在性が保証される自然数 $N\in\Nat$ を考える.すると, 任意の $M\ge N$ に対して $\vG$ は $w$ を通る長さ $M$ の有向閉路をもつ (つまり $P^M(w,w)>0$).
+  頂点 $w\in V$ を任意に固定し, $S\subseteq \Nat$ を $S = \set{i\ge 0\colon P^i(w,w)>0}$ とする.非周期性より $\gcd(S)=1$ である.この集合 $S$ に対し[補題1.2.7](#lem:Schur_lemma)により存在性が保証される自然数 $N\in\Nat$ を考える.すると, 任意の $M\ge N$ に対して $\vG$ は $w$ を通る長さ $M$ の有向閉路をもつ (つまり $P^M(w,w)>0$).
 
   $L=2|V|+N$ が主張を満たすことを示す.すなわち, 任意の $u,v\in V$ に対し, $\vG$ は $u$ から $v$ への長さ $L$ の有向路を含むことを示す.既約性の仮定より $\vG$ は途中で $w$ を経由する長さ $\ell \le 2|V|$ の $uv$-有向路 $p$ を持つ.この有向路 $p$ に沿って $u$ から $w$ に進み, そこから長さ $L - \ell \ge N$ の閉路に沿って進み, さらに再び $p$ に沿って $w$ から $v$ に進む有向路を考えると, その長さはちょうど $L$ であり, すなわち $P^L(u,v)>0$ を意味する.
 </details>
-<div id="lem:ellone norm" markdown="1">
+<div id="lem:ellone_norm" markdown="1">
 {: .lemma-title }
 > **補題1.2.9**
 >
@@ -168,7 +168,7 @@ $$
 
 </details>
 
-これら三つの補題を用いて[定理1.2.6](#thm:random walk convergence)の証明を与える.
+これら三つの補題を用いて[定理1.2.6](#thm:random_walk_convergence)の証明を与える.
 
 <details markdown="1" style="background-color: #eee;">
 <summary style="display: list-item">定理1.2.6の証明</summary>
@@ -187,7 +187,7 @@ $$
 となり矛盾を得る.
 
 二つ目の主張を示す.$P$は非周期的なので
-[補題1.2.8](#lem:P bekijou)より, ある$L\ge 1$に対して$Q\defeq P^L$の全ての成分は正である.従って, ある$0<\delta<1$, 全成分が$1/\abs{V}$の確率行列$J$, 適当な確率行列$R$を用いて
+[補題1.2.8](#lem:P_bekijou)より, ある$L\ge 1$に対して$Q\defeq P^L$の全ての成分は正である.従って, ある$0<\delta<1$, 全成分が$1/\abs{V}$の確率行列$J$, 適当な確率行列$R$を用いて
 
 $$
 Q = \delta J + (1-\delta)R
@@ -200,7 +200,7 @@ $$
 $$
 
 となる.
-ここで, 最後の不等号で[補題1.2.9](#lem:ellone norm)を用いた.
+ここで, 最後の不等号で[補題1.2.9](#lem:ellone_norm)を用いた.
 これは$\norm{\pi - \pi'}_1>0$に矛盾する.以上より一意性が示された.
 
 次に収束性を示す.$\allone$に直交する任意のベクトルに対し$xQ^t$を考える.まず, $t=1$のときは$xQ = (1-\delta) xR$となり, このベクトルもまた$\allone$に直交している.実際, $\inprod{xR,\allone} = x^\top R \allone = x^\top \allone = 0$である.このことから$t=2$のときは$xQ^2 = (1-\delta)xR \cdot (\delta J + (1-\delta) R) =(1-\delta)^2 xR^2$を得る.これを繰り返していくと, 一般の$t$に対して$xQ^t = (1-\delta)^txR^t$を得る.初期分布$p_0\in[0,1]^V$に対し, $x\defeq p_0 - \pi$は$\allone$に直交するので
@@ -222,7 +222,7 @@ $$
 
 ## 混交時間
 
-[定理1.2.6](#thm:random walk convergence)ではランダムウォークの一意収束性の条件を与えた. では, その収束の速さはどれくらいだろうか? この問題は日常的には例えば次のような状況で現れる:
+[定理1.2.6](#thm:random_walk_convergence)ではランダムウォークの一意収束性の条件を与えた. では, その収束の速さはどれくらいだろうか? この問題は日常的には例えば次のような状況で現れる:
 
 - トランプカードで遊ぶとき, 何回シャッフルすればカードが「混ざり合う」か?
 - 料理で調味料をスープに入れたとき, 何回かき回せば味が「混ざり合う」か?

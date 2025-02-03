@@ -8,7 +8,7 @@ parent: ランダムウォーク概論
 
 以下の結果は第二固有値の上界を得るときなどに役にたつ.
 
-<div id="lemma:Rayleigh quotient" markdown="1">
+<div id="lemma:Rayleigh_quotient" markdown="1">
 {: .lemma-title }
 > **補題1.7.1**
 >
@@ -22,7 +22,7 @@ parent: ランダムウォーク概論
 > $$
 </div>
 
-<div id="proof:Rayleigh quotient" markdown="1">
+<div id="proof:Rayleigh_quotient" markdown="1">
 {: .proof-title }
 <details markdown="1" style="background-color: #eee;">
 <summary style="display: list-item">証明</summary>
@@ -60,10 +60,10 @@ $$
 
 # 片側の固有値のバウンド
 
-[系1.6.3]({{site.baseurl}}/docs/chap1/mixing_spectral#cor:general expander mixing lemma)は$\lambda(P)$が小さいときに二次形式$\piprod{f,g} - \Epi f \cdot \Epi g$を両側から押さえているが,
+[系1.6.3]({{site.baseurl}}/docs/chap1/mixing_spectral#cor:general_expander_mixing_lemma)は$\lambda(P)$が小さいときに二次形式$\piprod{f,g} - \Epi f \cdot \Epi g$を両側から押さえているが,
 同様の証明を考えると$\lambda_2(P)$のみが小さいことが保証されている場合も同様に二次形式の片側のバウンドを得ることができる.
 
-<div id="lemma:one side EML" markdown="1">
+<div id="lemma:one_side_EML" markdown="1">
 {: .lemma-title }
 > **補題1.7.2**
 >
