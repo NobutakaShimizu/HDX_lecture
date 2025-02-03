@@ -1,6 +1,6 @@
 ---
 title: 定常分布から定まる内積とノルム
-nav_order: 4
+nav_order: 5
 parent: ランダムウォーク概論
 ---
 # 定常分布から定まる内積とノルム
@@ -9,7 +9,7 @@ parent: ランダムウォーク概論
 
 <div id="def:naiseki" markdown="1">
 {: .definition-title }
-> **定義1.4.1**
+> **定義1.5.1**
 >
 > 有限集合$V$上の分布$\pi\in(0,1]^V$に対し,
 > $\Real^V$に以下の内積$\piprod{\cdot,\cdot}$を定めた内積空間を$\pispace$で表す:
@@ -30,7 +30,7 @@ parent: ランダムウォーク概論
 > $$
 </div>
 
-[定義1.4.1](#def:naiseki)で考える分布$\pi$は全ての成分が正であるため,
+[定義1.5.1](#def:naiseki)で考える分布$\pi$は全ての成分が正であるため,
 上記の内積$\piprod{\cdot,\cdot}$はちゃんと実ベクトル空間の内積の公理(対称双線形性, 非退化性, 半正定値性)を満たしており,
 確かに$\pispace$は内積空間である.
 
@@ -40,7 +40,7 @@ $\Real^V$上の通常の内積$\inprod{\cdot,\cdot}$を考えたとき, 任意�
 
 <div id="lemma:reversible adjoint" markdown="1">
 {: .lemma-title }
-> **補題1.4.2**
+> **補題1.5.2**
 >
 > 定常分布$\pi$をもつ既約的かつ可逆なランダムウォークの遷移確率行列$P$は,
 > 任意の$f,g\in\Real^V$に対して
@@ -51,7 +51,7 @@ $\Real^V$上の通常の内積$\inprod{\cdot,\cdot}$を考えたとき, 任意�
 >
 > を満たす.
 
-[補題1.4.2](#lemma:reversible adjoint)は内積$\piprod{\cdot,\cdot}$に関して遷移確率行列$P$が随伴行列となることを示している.
+[補題1.5.2](#lemma:reversible adjoint)は内積$\piprod{\cdot,\cdot}$に関して遷移確率行列$P$が随伴行列となることを示している.
 
 <details markdown="1" style="background-color: #eee;">
 <summary style="display: list-item">証明</summary>
@@ -80,7 +80,7 @@ $$ \piprod{f,Pg} = \piprod{P^*f,g} $$
 
 <div id="lemma:reversible real eigenvalue" markdown="1">
 {: .lemma-title }
-> **補題1.4.3**
+> **補題1.5.3**
 >
 > 既約的かつ可逆なランダムウォークの遷移確率行列$P$と定常分布$\pi$に対し,
 > 行列
@@ -136,13 +136,13 @@ $$
 
 </details>
 </div>
-[補題1.4.3](#lemma:reversible real eigenvalue)において既約性の仮定は除去できる.
+[補題1.5.3](#lemma:reversible real eigenvalue)において既約性の仮定は除去できる.
 実際, $P$が定める状態遷移を表す有向グラフを強連結成分に分解し,
-各成分ごとに[補題1.4.3](#lemma:reversible real eigenvalue)を適用すればよい.
+各成分ごとに[補題1.5.3](#lemma:reversible real eigenvalue)を適用すればよい.
 
 <div id="thm:eigendecomposition" markdown="1">
 {: .theorem-title }
-> **定理1.4.4**
+> **定理1.5.4**
 >
 > 既約的かつ可逆なランダムウォークの遷移確率行列を$P$とし, その定常分布を$\pi$とする.
 > $|V|=n$とする.
@@ -215,9 +215,9 @@ $$
 
 <div id="def:expectation and variance" markdown="1">
 {: .definition-title }
-> **定義1.4.5**
+> **定義1.5.5**
 >
-> [定理1.4.4](#thm:eigendecomposition)と同じ仮定の下で,
+> [定理1.5.4](#thm:eigendecomposition)と同じ仮定の下で,
 > $f \in \pispace$の期待値と分散を次のように定義する:
 >
 > $$
@@ -240,7 +240,7 @@ $\piprod{f,g} - \Epi f \cdot \Epi g$
 
 <div id="lemma:covariance" markdown="1">
 {: .lemma-title }
-> **補題1.4.6**
+> **補題1.5.6**
 >
 > 任意の$f,g\in \pispace$に対し,
 >
@@ -251,7 +251,7 @@ $\piprod{f,g} - \Epi f \cdot \Epi g$
 <details markdown="1" style="background-color: #eee;">
 <summary style="display: list-item">証明</summary>
 
-[定理1.4.4](#thm:eigendecomposition)で得られる$\pispace$の正規直交基底を$x_1,\dots,x_n$とし, 関数$f,g$をこれらの線形結合
+[定理1.5.4](#thm:eigendecomposition)で得られる$\pispace$の正規直交基底を$x_1,\dots,x_n$とし, 関数$f,g$をこれらの線形結合
 
 $$
 \begin{align*}

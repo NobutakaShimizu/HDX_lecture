@@ -1,6 +1,6 @@
 ---
 title: ランダムウォークのスペクトルと混交時間
-nav_order: 5
+nav_order: 6
 parent: ランダムウォーク概論
 ---
 # ランダムウォークのスペクトルと混交時間
@@ -9,7 +9,7 @@ parent: ランダムウォーク概論
 
 <div id="def:second eigenvalue" markdown="1">
 {: .definition-title }
-> **定義1.5.1**
+> **定義1.6.1**
 >
 > サイズ$n$の集合$V$上の可逆なランダムウォークを考え, 
 > その遷移確率行列$P$の固有値を$1=\lambda_1 \ge \dots \ge \lambda_n\ge -1$に対し, 
@@ -22,7 +22,7 @@ parent: ランダムウォーク概論
 
 <div id="lemma:variance" markdown="1">
 {: .lemma-title }
-> **補題1.5.2**
+> **補題1.6.2**
 >
 > 既約的かつ可逆なランダムウォークの
 > 遷移確率行列$P$と関数$f \in \pispace$に対し
@@ -46,7 +46,7 @@ parent: ランダムウォーク概論
 
 <div id="cor:general expander mixing lemma" markdown="1">
 {: .corollary-title }
-> **系1.5.3**
+> **系1.6.3**
 >
 > 可逆なランダムウォークの遷移確率行列$P$を考える. 
 > 任意の関数$f,g\in\pispace$に対し, 
@@ -58,7 +58,7 @@ parent: ランダムウォーク概論
 
 <div id="lemma:mixing time and spectral gap" markdown="1">
 {: .lemma-title }
-> **補題1.5.4**
+> **補題1.6.4**
 >
 > 集合$V$上の既約, 非周期的, 可逆なランダムウォークを考え, 
 > そのスペクトルギャップを$\gamma$とする. 
@@ -81,7 +81,7 @@ parent: ランダムウォーク概論
 <details markdown="1" style="background-color: #eee;">
 <summary style="display: list-item">証明</summary>
 
-[定理1.4.4]({{site.baseurl}}/docs/chap1/pi_innerprod#thm:eigendecomposition)の正規直交基底を$x_1,\dots,x_n$とする. 
+[定理1.5.4]({{site.baseurl}}/docs/chap1/pi_innerprod#thm:eigendecomposition)の正規直交基底を$x_1,\dots,x_n$とする. 
 ピタゴラスの定理より任意のベクトル$f \in \Real^V$は
 
 $$
@@ -103,7 +103,7 @@ $$
 を得る. 
 特に, $\sum_{i=2}^n x_i(u)^2 = \frac{1}{\pi(u)} - 1 \le \frac{1}{\pi(u)}$である. 
 
-ここで, [定理1.4.4]({{site.baseurl}}/docs/chap1/pi_innerprod#thm:eigendecomposition)より, $P^t\Pi^{-1} - J$の第$(u,v)$成分に着目すると
+ここで, [定理1.5.4]({{site.baseurl}}/docs/chap1/pi_innerprod#thm:eigendecomposition)より, $P^t\Pi^{-1} - J$の第$(u,v)$成分に着目すると
 
 $$
 \begin{align*}

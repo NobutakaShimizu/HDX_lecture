@@ -1,6 +1,6 @@
 ---
 title: その他の話題
-nav_order: 6
+nav_order: 7
 parent: ランダムウォーク概論
 ---
 
@@ -10,7 +10,7 @@ parent: ランダムウォーク概論
 
 <div id="lemma:Rayleigh quotient" markdown="1">
 {: .lemma-title }
-> **補題1.6.1**
+> **補題1.7.1**
 >
 > 定常分布$\pi$をもつ既約的かつ可逆なランダムウォークの遷移確率行列$P$に対し, 以下が成り立つ:
 > 
@@ -28,7 +28,7 @@ parent: ランダムウォーク概論
 <summary style="display: list-item">証明</summary>
 
 $|V|=n$とする.
-[定理1.4.4]({{site.baseurl}}/docs/chap1/pi_innerprod#thm:eigendecomposition)の正規直交基底$x_1=\allone,x_2,\dots,x_n$を使って
+[定理1.5.4]({{site.baseurl}}/docs/chap1/pi_innerprod#thm:eigendecomposition)の正規直交基底$x_1=\allone,x_2,\dots,x_n$を使って
 
 $$
 f = \sum_{i=1}^n f_i x_i
@@ -60,12 +60,12 @@ $$
 
 # 片側の固有値のバウンド
 
-[系1.5.3]({{site.baseurl}}/docs/chap1/mixing_spectral#cor:general expander mixing lemma)は$\lambda(P)$が小さいときに二次形式$\piprod{f,g} - \Epi f \cdot \Epi g$を両側から押さえているが,
+[系1.6.3]({{site.baseurl}}/docs/chap1/mixing_spectral#cor:general expander mixing lemma)は$\lambda(P)$が小さいときに二次形式$\piprod{f,g} - \Epi f \cdot \Epi g$を両側から押さえているが,
 同様の証明を考えると$\lambda_2(P)$のみが小さいことが保証されている場合も同様に二次形式の片側のバウンドを得ることができる.
 
 <div id="lemma:one side EML" markdown="1">
 {: .lemma-title }
-> **補題1.6.2**
+> **補題1.7.2**
 >
 > 任意の$f,g\in \pispace$に対し,
 >
