@@ -8,7 +8,7 @@ nav_order: 2
 なお, ここで扱うランダムウォークは有限集合$V$上の確率行列$P$によって定義されるものを考える.
 参考文献としては
 
-D. Levin and Y. Peres, *Markov Chains and Mixing Times*, American Mathematical Society, 2017.
+D. Levin and Y. Peres, *Markov Chains and Mixing Times*, American Mathematical Society, 2017, [URL](https://bookstore.ams.org/view?ProductCode=MBK/107).
 
 を挙げておく.
 本講義の内容はこの資料のChapter 4と12に基づいている.
